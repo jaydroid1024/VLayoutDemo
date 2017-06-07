@@ -2,31 +2,66 @@
 <manifest package="com.jay.vlayoutdemo"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <!-- Optional permission for reliable local dispatching on non-Google Play devices -->
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <!-- App receives GCM messages. -->
-    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:name=".App"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.main.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".ui.product.ProductActivity">
+        </activity>
+        <activity android:name=".ui.VLayout.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.VLayout.AllActivity">
+        </activity>
+        <activity android:name=".ui.VLayout.ColumnLayoutHelperActivity">
+        </activity>
+        <activity android:name=".ui.VLayout.FixLayoutHelperActivity">
+        </activity>
+        <activity android:name=".ui.VLayout.FloatLayoutHelperActivity">
+        </activity>
+        <activity android:name=".ui.VLayout.GridLayoutHelperActivity">
+        </activity>
+        <activity android:name=".ui.VLayout.LinearLayoutHelperActivity">
+        </activity>
+        <activity android:name=".ui.VLayout.OnePlusNLayoutHelperActivity">
+        </activity>
+        <activity android:name=".ui.VLayout.ScrollFixLayoutHelperActivity">
+        </activity>
+        <activity android:name=".ui.VLayout.SingleLayoutHelperActivity">
+        </activity>
+        <activity android:name=".ui.VLayout.StaggeredGridLayoutHelperActivity">
+        </activity>
+        <activity android:name=".ui.VLayout.StickyLayoutHelperActivity">
+        </activity>
+        <activity android:name=".ui.VLayout.JDHomeNormalActivity">
+        </activity>
+        <activity android:name=".ui.VLayout.JDHomeVLayoutActivity">
         </activity>
     </application>
 

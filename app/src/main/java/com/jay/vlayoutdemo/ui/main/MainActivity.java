@@ -35,7 +35,7 @@ public class MainActivity extends BaseActivity implements MainMvpView {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         ButterKnife.bind(MainActivity.this);
         mainPresenter = new MainPresenter(this);
         mainPresenter.getUserInfo();
