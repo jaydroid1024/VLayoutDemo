@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MvpDemo</string>
+    <string name="app_name">VLayoutDemo</string>
     <!-- Global Data-->
     <string name="service_version">1.0.4</string>
     <string name="app_crash_friendly_hint">Sorry, there is something wrong. The application is about to exit.</string>
